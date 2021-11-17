@@ -1,0 +1,89 @@
+h1{
+    color:#282828;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 40px 0 10px 0px;
+    padding: 0;
+}
+p{
+    margin: 10px 0;
+}
+
+.card_personality{
+    width: 260px;
+    padding: 10px;
+    margin: 0 10px;    
+    margin-top: 15px;
+    border: 1px solid #282828;
+
+}
+.people-wrapper.personality{
+    margin-top: 30px;
+}
+.info{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.list{
+    display: flex;
+}
+.class{
+    font-weight: bold;
+    margin-right: 3px;
+
+}
+.biography{
+    padding: 0;
+    margin-bottom: 0;
+}
+.card_personality .photo{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 260px;
+    height: 390px;
+}
+@media (min-width: 500px){
+    .info-wrapper{
+        display: flex;
+    }
+    .h1{
+        border-bottom: 1px solid #282828;
+        padding-bottom: 5px;
+        margin-left: 10px;
+    }
+    .h2{
+        border-bottom: 1px solid #282828;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    p.info{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+}
+@media (max-width: 500px){
+        .info-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .h1{
+        border-bottom: 1px solid #282828;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .h2{
+        border-bottom: 1px solid #282828;
+        font-size: 20px;
+        margin: 10px 10px 0 10px;
+    }
+    p.info{
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+}

@@ -5,10 +5,7 @@ html {
 body{
     margin: 0;
 }
-a{
-    text-decoration: none;
-    color: #fff;
-}
+
 nav{
     display: flex;
     margin-right: auto;
@@ -17,6 +14,10 @@ h2{
     margin: 0;
     padding: 0;
     all: unset;
+}
+.head_nav{
+    text-decoration: none;
+    color: #fff;
 }
 .head-wrapper{
     display: flex;
@@ -68,10 +69,6 @@ h2{
     letter-spacing: 1px;
     padding: 0;
 }
-.card{
-    width: 200px;
-    margin-right: 20px;
-}
 .photo{
     object-fit: cover;
     border-radius: 5px;
@@ -83,17 +80,93 @@ h2{
     font-size: 15px;
     letter-spacing: 1px;
 }
+.company{
+    text-align: center;
+    color:white;
+    margin: 10px 0;
+}
+.link{
+    object-fit: cover;
+    margin-top: 8px;
+    height: 40px;
+}
+.inc{
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin-top: 0;
+}
+#zatemnenie:target {
+    display: block;
+}
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.68);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;  
+}   
+  
+.cross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    all: unset;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 4px;
+    top: 4px;
+    background-color: #282828;
+}
+.cross_text{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.cross:hover{
+    background-color: #494949;
+}
+.contact{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+.vk{
+    text-decoration: none;
+    color: #282828;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+a.vk:hover{
+    color: black;
+}
 @media (min-width: 900px){
     .people-wrapper{
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
+        padding: 0;
         margin: 40px auto;
         width: 100%;
-        max-width: 1470px;
+        max-width: 1540px;
+    }
+    .card{
+        width: 200px;
+        margin: 0 10px;
+        transition: 0.2s
+    }
+    .card:hover{
+        transform: scale(1.01);
     }
     .category-wrapper{
         margin-bottom: 30px;
+        margin-left: 10px;
     }
     .people{
         display: flex;
@@ -102,6 +175,7 @@ h2{
     .logo{
         object-fit: cover;
         height: 90px;
+        margin-left: 10px;
     }
     .head-wrapper{
         display: flex;
@@ -113,7 +187,7 @@ h2{
         justify-content: center;
         margin: 0 auto;
         width: 100%;
-        max-width: 1500px;
+        max-width: 1540px;
     }
     .navigator{
         display: flex;
@@ -126,7 +200,8 @@ h2{
     }
     .theme-button{
         all: unset;
-        padding: 0 20px;
+        padding: 0 10px;
+        margin-top: 15px;
     }
     .title{
         color:white;
@@ -161,6 +236,17 @@ h2{
         letter-spacing: 1px;
         padding: 0;
     }
+    .window {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        border: 1px solid #cecece;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+        background-color: #fafafa;    
+    }
 }
 @media (max-width: 900px){
     .people-wrapper{
@@ -169,6 +255,10 @@ h2{
         margin: 40px auto;
         width: 100%;
         max-width: 1470px;
+    }
+    .card{
+        width: 200px;
+        margin: 0 10px;
     }
     .category-wrapper{
         margin-bottom: 30px;
@@ -181,7 +271,8 @@ h2{
     }
     .logo{
         object-fit: cover;
-        height: 120px;
+        height: 140px;
+        margin: 0 20px;
     }
     .head-wrapper{
         display: flex;
@@ -198,7 +289,6 @@ h2{
         width: 70%;
         max-width: 750px;
         height: 1px;
-
         margin-top: 0;
     }
     .head{
@@ -228,12 +318,23 @@ h2{
         width: 100%;
     }
     .translate{
-    display: inline;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 0;
-    margin: 15px;
+        display: inline;
+        text-transform: uppercase;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 15px;
+    }
+    .window {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        border: 1px solid #cecece;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+        background-color: #fafafa;    
     }
 }
